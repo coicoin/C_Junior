@@ -4,15 +4,13 @@ int main(void)
 {
 	int m;
 	printf("Mark = "); scanf("%d", &m);
-	if ((m>=2)&&(m<=5))
+	switch(m)
 	{
-		if (m!=2) 	printf(":-) \n");
-		else		printf(":-( \n");
-	}
-	else
-	{
-		printf("ERROR");
-		printf("\a");
+		case(5):
+		case(4):
+		case(3): printf(":-)"); break;
+		case(2): printf(":-("); break;
+		default: printf("ERROR");
 	}
 	getch();
 }
