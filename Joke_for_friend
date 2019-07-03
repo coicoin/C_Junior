@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+	system("chcp 1251");
+
+	char surname[30];
+	char name[20];
+	printf("Введите, пожалуйста, Вашу фамилию и нажмите Enter: ");
+		scanf("%s",surname);
+	printf("Введите, пожалуйста, Ваше имя и нажмите Enter: ");
+		scanf("%s",name);
+  printf("Введите произвольное целое число и нажмите Enter->");
+	int x, y, z;
+		scanf("%d",&x);
+	printf("Введите произвольное целое число не равное нулю->");
+		scanf("%d",&y);
+		printf("Здравствуйте, %s %s \n",name,surname);
+		printf("%d вирусов и 10 троянских червей были загружены на Ваш компьютер\n",x+y);
+		printf("Скорость компьютера снижена на %d%% \n",x-y);
+		printf("Напишите слово ДА, чтобы удалить загруженные вирусы... \n");
+		scanf("%s", &z);
+		printf("Все Ваши деньги успешно отправлены на наш счет, благодарим Вас, %s\n\n\n",name);
+		printf("                   С   Н О В Ы М   Г О Д О М ! ! !\n\n\n");
+		
+    system("pause");
+		return 0;
+}
