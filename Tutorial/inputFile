@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main(void)
+{
+    char name[] = "prim.txt";
+    int n, i;
+    FILE *f;
+    printf("Введите переменную n: ");
+    scanf("%d", &n);
+    freopen(name,"wt",stdout);
+    //переопределить стандартное устройство вывода - экран
+    for (i=0; i<n; i++);
+        printf("%d/n",i);
+    //печать будет осуществляться в текстовый файл с именем prim.txt
+    printf("\nФайл добавлен");
+    printf("\nPress any button...");
+    system ("pause");
+    return 0;
+}
