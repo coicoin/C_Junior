@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int main(void)
+{
+    float **A;
+    int n, m, i, j;
+    printf ("Введите количество строк матрицы: ");
+    scanf ("%d",&n);
+    printf ("Введите количество столбцов матрицы: ");
+    scanf ("%d",&m);
+    A = (int**)malloc(sizeof(float*)*n);
+    for(i=0; i<n; i++)
+    A[i] = (int)malloc(sizeof(float)*m);
+    for(i=0; i<n; i++)
+    {
+        for(j=0; j<m; j++)
+        {
+            printf("A[%d][%d] = ", i, j);
+            scanf ("%f", &(A[i][j]));
+            printf("%8.3f ", A[i][j]);
+            printf("\n");
+        }
+    }
+for (i=n-1; i>=0; i--)
+free(A[i]);
+free(A);
+system("pause");
+return 0;
+}
